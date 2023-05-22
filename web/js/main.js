@@ -19,7 +19,6 @@ window.addEventListener('message', (event) => {
 
     case 'setTarget': {
       eye.style.fill = '#cfd2da';
-
       if (event.data.options) {
         for (const type in event.data.options) {
           event.data.options[type].forEach((data, id) => {

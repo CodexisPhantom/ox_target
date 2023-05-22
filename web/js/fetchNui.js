@@ -1,4 +1,4 @@
-const resource = GetParentResourceName();
+const resource = 'ox_target';
 
 export async function fetchNui(eventName, data) {
   const resp = await fetch(`https://${resource}/${eventName}`, {

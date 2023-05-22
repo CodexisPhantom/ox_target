@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 body {
   visibility: hidden;
@@ -7,6 +7,7 @@ body {
   margin: 0;
   user-select: none;
   overflow: hidden;
+  background-color: aquamarine;
 }
 
 p {
@@ -27,8 +28,9 @@ p {
 
 #options-wrapper {
   position: absolute;
-  top: calc(48.4%);
-  left: calc(50% + 18pt);
+  top: 50%;
+  left: 50%;
+  transform: translate(10%, -50%);
 }
 
 .option-container {
@@ -37,7 +39,7 @@ p {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  font-family: 'Nunito';
+  font-family: 'Quicksand';
   background: linear-gradient(
     90deg,
     rgba(20, 20, 20, 0.7) 0%,
@@ -54,6 +56,8 @@ p {
   height: 22pt;
   width: 150pt;
   top: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .option-container:hover {
